@@ -31,4 +31,6 @@
     </div>
     <div class="col">
         <h1>CONTACTS</h1>
+        <div class="row">
+            
 </div>
