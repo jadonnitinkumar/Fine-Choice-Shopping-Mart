@@ -23,5 +23,6 @@
         <h1>FOLLOW US</h1>
         <div class="row">
             <div class="icon">
-                
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:40px;color:blue;"></i></a>
+            
 </div>
