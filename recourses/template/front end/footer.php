@@ -21,4 +21,6 @@
     </div>
     <div class="col">
         <h1>FOLLOW US</h1>
+        <div class="row">
+            
 </div>
