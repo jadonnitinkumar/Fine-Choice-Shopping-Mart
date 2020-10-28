@@ -33,4 +33,5 @@
         <h1>CONTACTS</h1>
         <div class="row">
             <span>shoppingmart@gmail.com</span>
+            <span>(+91) 8979184740</span>
 </div>
