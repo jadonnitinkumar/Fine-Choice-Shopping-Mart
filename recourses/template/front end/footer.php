@@ -24,5 +24,5 @@
         <div class="row">
             <div class="icon">
             <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:40px;color:blue;"></i></a>
-            
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" style="font-size:48px;color:darkred"></i></a>
 </div>
