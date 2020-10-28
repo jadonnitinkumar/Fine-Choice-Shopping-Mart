@@ -1,6 +1,6 @@
 <div class="footer">
     <div class="col">
-        <h1>Help</h1>
+        <h1>HELP</h1>
         <div class="row">
                 <a href="#">Delivery</a>
                 <a href="#">Secure Payment</a>
@@ -36,7 +36,7 @@
             <span>(+91) 8979184740</span>
         </div>
     </div>
-    <div class="clearfix">
+    <div class="clearfix"></div>
     <hr><a id="LINKING"></a>
         &copy; 2020 All rights reserved. <a href="#">PRIVACY & POLICY</a> | <a href="#">Terms of Use</a> | <a href="#">Give us feedback</a>
 </div>
