@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <?php include "../recourses/template/front end/headers.php"; ?>
-    <?php include "../recourses/template/front end/slider.php"; ?>
+    <?php include "../resources/template/front_end/header.php"; ?>
+    <?php include "../resources/template/front_end/slider.php"; ?>
     <h1 id=line1>SHOP FOR HEALTHY FOODS</h1>
     <div class="asdf2">
         <section id="product-1">
