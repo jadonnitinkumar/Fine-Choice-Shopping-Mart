@@ -217,6 +217,45 @@ body {
   
   }
 
+  .footer .col h1 {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-family: cursive;
+  }
+  
+  .footer .col .row {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    display: block;
+  }
+  
+  .footer .col .row a {
+  
+    text-align: center;
+    padding: 5px 5px 10px 5px;
+    display: block;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: left;
+  }
+  
+  .footer .col .row .icon1 a {
+    display: inline-block;
+  }
+  
+  span {
+    color: dimgrey;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
 
 
 
