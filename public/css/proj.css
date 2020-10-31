@@ -20,3 +20,9 @@ body {
     float: right;
     margin-right: 40px;
   }
+  .navbar ul li {
+    height: 60px;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+  }
