@@ -6,6 +6,7 @@
     <title>Fine Choice Shopping Mart</title>
 </head>
 <body>
+<?php include "../recourses/template/front end/headers.php"; ?>
     <h1 id=line1>SHOP FOR HEALTHY FOODS</h1>
     <div class="asdf2">
     <section id="product-1">
