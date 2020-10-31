@@ -8,6 +8,7 @@
 <body>
     <h1 id=line1>SHOP FOR HEALTHY FOODS</h1>
     <div class="asdf2">
+    <section id="product-1"></section>
     </div>
 </body>
 </html>
