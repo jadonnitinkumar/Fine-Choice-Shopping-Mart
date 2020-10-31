@@ -42,3 +42,9 @@ body {
     text-decoration: none;
     font-size: 20px;
   }
+  .navbar a:hover {
+    font-size: 20;
+    color: cyan;
+    background-color: none;
+  }
+  
