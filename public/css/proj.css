@@ -31,3 +31,8 @@ body {
     padding: 40px;
     line-height: 40px;
   }
+  .navbar ul li:hover ul {
+    display: block;
+    text-align: center;
+    z-index: 999;
+  }
