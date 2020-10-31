@@ -8,7 +8,7 @@
             <li><b><a href="checkout.php">CART</a></b></li>
             <li><b><a href="contact.php">CONTACTS</a></b></li>
             <li><b><a href="login.php">LOGIN</a></b></li>
-            <li><b><a href="login.php">SIGN UP</a></b></li>
+            <li><b><a href="Signup.php">SIGN UP</a></b></li>
         </div>
     </ul>
 </div>
