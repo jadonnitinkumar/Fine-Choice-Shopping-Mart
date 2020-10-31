@@ -1,15 +1,15 @@
 <div class="slide-show-container">
     <div class="myslides fade">
         <div class="numbertext">1/3</div>
-        <img src="slide1.jpg">
+        <img src="../recourses/template/front end/slider image/Slide1.jpg">
     </div>
     <div class="myslides fade">
         <div class="numbertext">2/3</div>
-        <img src="slide2.jpg">
+        <img src="../recourses/template/front end/slider image/Slide2.jpg">
     </div>
     <div class="myslides fade">
         <div class="numbertext">3/3</div>
-        <img src="slide3.jpg">
+        <img src="../recourses/template/front end/slider image/Slide3.jpg">
     </div>
 </div><br>
 <div style="padding-left: 650px;">
