@@ -7,6 +7,7 @@
     <li><b><a href="">CATEGORY</a></b></li>
     <li><b><a href="checkout.php">CART</a></b></li>
     <li><b><a href="contact.php">CONTACTS</a></b></li>
+    <li><b><a href="">LOGIN/SIGNUP</a></b></li>
     </div>
     </ul>
 </div>
