@@ -5,6 +5,7 @@
     <li><b><a href="dashboard/index.php">ADMIN</a></b></li>
     <li><b><a href="#linking">ABOUT-US</a></b></li>
     <li><b><a href="">CATEGORY</a></b></li>
+    <li><b><a href="checkout.php">CART</a></b>
     </div>
     </ul>
 </div>
