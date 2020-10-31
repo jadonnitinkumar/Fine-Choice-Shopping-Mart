@@ -5,7 +5,7 @@ body {
     height: 100vh;
     font-family: 'Bitter', serif;
   }
-  #line1 {
+  #line-1 {
     color: blueviolet;
     text-align: center;
     background-color: lightblue;
@@ -108,7 +108,7 @@ body {
     }
   }
   
-  .asdf2 {
+  .products {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -124,7 +124,7 @@ body {
     direction: 1;
   }
   
-  .gallery2 {
+  .gallery {
     width: 350px;
     height: 250px;
     margin-left:10px;
@@ -136,11 +136,11 @@ body {
     box-shadow: 0 0 10px 0 black;
   }
   
-  .gallery2 img {
+  .gallery img {
     width: 100%;
     height: 100%;
   }
-  .product-imag{
+  .product-img{
     object-fit: cover;
   }
   .product-name{
@@ -159,31 +159,6 @@ body {
     box-shadow: 0 0 10px 0 black;
   }
   
-  .gallery1 {
-    margin: 37px;
-    float: left;
-    width: 200px;
-    height: 200px;
-  }
-  
-  .gallery1 a:hover {
-    -webkit-transform: scale(2.0);
-    -moz-transform: scale(2.0);
-    -o-transform: scale(2.0);
-    -ms-transform: scale(2.0);
-    transform: scale(2.0);
-    position: relative;
-    top: -.4em;
-  }
-  
-  .gallery:hover {
-    border: 1px solid white;
-  }
-  
-  .gallery img {
-    width: 100%;
-    height: 75%;
-  }
   .healthy{
     text-align: center;
     padding-top: 25px;
