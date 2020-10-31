@@ -31,6 +31,27 @@
             <h1 class="product-name">Dry-Fruits</h1>
         </div>
     </section>
+    <section id=product-2>
+
+        <div class="gallery2">
+            <a target="_blank" href="#">
+                <img class="product-imag" src="Screenshots\cold drinks.jpg" alt="Colddrinks" title="Cold drink">
+            </a>
+            <h1 class="product-name">Green-Tea</h1>
+        </div>
+        <div class="gallery2">
+            <a target="_blank" href="#">
+                <img class="product-imag" src="Screenshots\row-of-spoons-with-different-dried-pulses.jpg" alt="Dried-pulses" title="Dried-pulses">
+            </a>
+            <h1 class="product-name">Pulses</h1>
+        </div>
+        <div class="gallery2">
+            <a target="_blank" href="#">
+                <img class="product-imag" src="Screenshots\Beans.jpg" alt="Cinque Terre" title="Beans">
+            </a>
+            <h1 class="product-name">Beans</h1>
+        </div>
+        </section>
     </div>
 </body>
 </html>
