@@ -16,21 +16,21 @@
         <section id="product-1">
             <div class="gallery">
                 <a target="_blank" href="#">
-                    <img class="product-img" src="Screenshots\Honey.jpg" alt="Honey" title="Honey">
+                    <img class="product-img" src="Products_images\Honey.jpg" alt="Honey" title="Honey">
                 </a>
                 <h1 class="product-name">Honey</h1>
             </div>
 
             <div class="gallery">
                 <a target="_blank" href="#">
-                    <img class="product-img" src="Screenshots\olive.jpg" alt="Olive Oil" title="Olive Oil">
+                    <img class="product-img" src="Products_images\olive.jpg" alt="Olive Oil" title="Olive Oil">
                 </a>
                 <h1 class="product-name">Olive-Oil</h1>
             </div>
 
             <div class="gallery">
                 <a target="_blank" href="#">
-                    <img class="product-img" src="Screenshots\dry-fruits-nuts.jpeg" alt="Dry-fruits-nuts"
+                    <img class="product-img" src="Products_images\dry-fruits-nuts.jpeg" alt="Dry-fruits-nuts"
                         title="Dry-fruits-nuts">
                 </a>
                 <h1 class="product-name">Dry-Fruits</h1>
@@ -40,27 +40,27 @@
 
             <div class="gallery">
                 <a target="_blank" href="#">
-                    <img class="product-img" src="Screenshots\cold drinks.jpg" alt="Colddrinks" title="Cold drink">
+                    <img class="product-img" src="Products_images\cold drinks.jpg" alt="Colddrinks" title="Cold drink">
                 </a>
                 <h1 class="product-name">Green-Tea</h1>
             </div>
             <div class="gallery">
                 <a target="_blank" href="#">
-                    <img class="product-img" src="Screenshots\row-of-spoons-with-different-dried-pulses.jpg"
+                    <img class="product-img" src="Products_images\row-of-spoons-with-different-dried-pulses.jpg"
                         alt="Dried-pulses" title="Dried-pulses">
                 </a>
                 <h1 class="product-name">Pulses</h1>
             </div>
             <div class="gallery">
                 <a target="_blank" href="#">
-                    <img class="product-img" src="Screenshots\Beans.jpg" alt="Cinque Terre" title="Beans">
+                    <img class="product-img" src="Products_images\Beans.jpg" alt="Cinque Terre" title="Beans">
                 </a>
                 <h1 class="product-name">Beans</h1>
             </div>
         </section>
     </div>
     <div class="healthy">
-        <img class="healthy-img" src="Screenshots\Blog_thumb.jpg">
+        <img class="healthy-img" src="Products_images\Blog_thumb.jpg">
         <h1>To Get Tight, Eat Right!</h1>
     </div>
 
