@@ -61,4 +61,8 @@ body {
     height: 500px;
     object-fit: cover;
   }
+  .mySlides {
+    display: none;
+    position: absolute;
+  }
   
