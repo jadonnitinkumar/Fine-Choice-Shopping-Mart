@@ -26,3 +26,8 @@ body {
     list-style-type: none;
     font-size: 20px;
   }
+  .navbar ul li a {
+    text-decoration: none;
+    padding: 40px;
+    line-height: 40px;
+  }
