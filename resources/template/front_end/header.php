@@ -11,9 +11,9 @@
                 <ul>
                     <li>
                         <button class="button" onclick="document.getElementById('id01').style.display='block'"
-                            style="width:180px;">CUSTOMER</button>
+                            style="width:200px;">CUSTOMER</button>
                         <div id="id01" class="modal">
-                            <form class="modal-contentt animate" method="post">
+                            <form class="modal-content animate" method="post">
                                 <span onclick="document.getElementById('id01').style.display='none'" class="close"
                                     title="Close Modal">&times;</span>
                                 <h1
@@ -42,20 +42,20 @@
                                         <input type="password " placeholder="Enter Password" name="psw">
                                     </div>
                                     <div>
-                                        <button class="buttoon" name="submit" type="submit ">SignUp</button>
+                                        <button class="btn" name="submit" type="submit ">SignUp</button>
                                     </div>
-                                    <p style="padding-top: 5px; font-size: 20px; font-family: sans-serif;">if already
-                                        account then<a href="icon.php"
-                                            style="color: white; padding-top: 5px; font-size: 25px; font-family: sans-serif;">Login</a>
+                                    <p style="font-size: 20px; font-family: sans-serif;">if already
+                                        account then<a href=""
+                                            style="color: white; font-size: 25px; font-family: sans-serif;">Login</a>
                                     </p>
                                 </form>
                             </form>
                         </div>
 
                         <script>
-                            // Get the modall
+                            
                             var modal = document.getElementById('id01');
-                            // When the user clicks anywhere outside of the modall, close it
+                            
                             window.onclick = function (event) {
                                 if (event.target == modal) {
                                     modal.style.display = "none";
@@ -66,9 +66,9 @@
                                 style="color: aliceblue;margin-left: -20px;">SHOPKEEPER</a></button>
 
                         <script>
-                            // Get the modal
+                            
                             var modal = document.getElementById('id02');
-                            // When the user clicks anywhere outside of the modal, close it
+
                             window.onclick = function (event) {
                                 if (event.target == modal) {
                                     modal.style.display = "none";
