@@ -11,8 +11,9 @@
         <div class="numbertext">3/3</div>
         <img src="../recourses/template/front end/slider image/Slide3.jpg">
     </div>
-</div><br>
-<div style="padding-left: 650px;">
+</div>
+<br><br>
+<div id="dots">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
