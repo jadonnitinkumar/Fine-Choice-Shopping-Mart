@@ -64,7 +64,7 @@
         <h1>To Get Tight, Eat Right!</h1>
     </div>
 
-    <?php include "../recourses/template/front end/footer.php"; ?>
+    <?php include "../resources/template/front_end/footer.php"; ?>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
             <p>
                 Supporting small business
                 <br>Out For Delivery<br>
-                Working at Home town grocers
+                Working at Fine Choice Shopping Mart
                 <a href="aboutus.php">Read More</a>
             </p>
         </div>
@@ -33,7 +33,7 @@
         <h1>CONTACTS</h1>
         <div class="row">
             <span>shoppingmart@gmail.com</span>
-            <span>(+91) 8979184740</span>
+            <span>(+91) 9787****42</span>
         </div>
     </div>
     <div class="clearfix"></div>

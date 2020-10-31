@@ -18,7 +18,10 @@ body {
   }
   .navbar ul {
     float: right;
-    margin-right: 40px;
+    margin-right: 50px;
+  }
+  .bar {
+    float: left;
   }
   .navbar ul li {
     height: 60px;
