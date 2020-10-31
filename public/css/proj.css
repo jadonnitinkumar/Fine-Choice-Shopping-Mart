@@ -47,4 +47,11 @@ body {
     color: cyan;
     background-color: none;
   }
+
+  .slideshow-container {
+    max-width: 100%;
+    height: 450px;
+    position: relative;
+    margin: 0 auto;
+  }
   
