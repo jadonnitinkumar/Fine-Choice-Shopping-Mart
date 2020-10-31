@@ -65,4 +65,14 @@ body {
     display: none;
     position: absolute;
   }
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
   
