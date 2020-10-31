@@ -16,3 +16,7 @@ body {
     background-color: rgb(204, 110, 110);
     line-height: 60px;
   }
+  .navbar ul {
+    float: right;
+    margin-right: 40px;
+  }
