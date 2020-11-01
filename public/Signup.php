@@ -9,7 +9,15 @@
             background-image: url('login_img/background-img.jpg');
             background-repeat: no-repeat;
             background-size: cover;
+			
         }
+		.model{
+			margin:350px auto 20px;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+
+		}
 		.loginbox p{
 			margin: 0px;
 			padding: 0px;
@@ -18,12 +26,12 @@
 
 		.loginbox{
 			width: 400px;
-			height: 600px;
+			height: 650px;
 			background-image: url('login_img/background-img2.jpg');
 			color: lightsalmon;
             position: absolute;
 			box-sizing: border-box;
-            margin-top: 20px;
+            margin-top:20px;
 		}
         
 		.loginbox input{
@@ -144,13 +152,13 @@
 			<p>PhoneNumber</p>
 			<input type="text" name="phn" placeholder="Enter My Phone Number">
 			<div>
-			<button href="#" class="button2 instagram" style="margin-top:-10px;"><span class="gradient"></span><input type="submit" name="submit" value="SignUp" style="width: 160px; background-color: transparent;padding: 15px;border-color:#BD3381;font-size: 20px;color: white"></button>
+			<button href="#" class="button2 instagram" style="margin-top:-5px;"><span class="gradient"></span><input type="submit" name="submit" value="SignUp" style="width: 160px; background-color: transparent;padding: 10px;border-color:#BD3381;font-size: 20px;color: white"></button>
 		</div>
             
 		</form>
 	</form>
 
-		<p style="padding-left: 40px;padding-top: 7px; font-size: 15px;">if already account then <a href="newlogin1.php"> Login</a></p>
+		<p style="padding-left: 40px;margin-top: 40px; font-size: 15px;">if already account then <a href="newlogin1.php"> Login</a></p>
 	</div>
 	</div>
 </body>
