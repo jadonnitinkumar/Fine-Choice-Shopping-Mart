@@ -1,12 +1,12 @@
 <div class="slideshow-container">
-    <div class="mySlides fade">
-        <img src="Slides\Slide1.jpg">
+    <div class="mySlides fade" style="display:block;">
+        <img src="Slides/Slide1.jpg">
     </div>
-    <div class="mySlides fade">
-        <img src="Slides\Slide1.jpg">
+    <div class="mySlides fade" style="display:none;">
+        <img src="Slides/Slide2.jpg">
     </div>
-    <div class="mySlides fade">
-        <img src="Slides\Slide1.jpg">
+    <div class="mySlides fade" style="display:none;">
+        <img src="Slides/Slide3.jpg">
     </div>
 </div>
 

@@ -68,7 +68,7 @@ body {
     width: 100%;
     margin-top: 15px;
     height: 500px;
-    object-fit: cover;
+    object-fit:cover;
   }
   .mySlides {
     display: none;
@@ -239,65 +239,6 @@ body {
   html {
     scroll-behavior: smooth;
   }
-
-  /* Full-width input fields */
-input[type="text "], input[type="password "],input[type="email "],input[type="phone "] {
-  width: 80%;
-  padding: 12px 18px;
-  margin: 8px;
-  display: inline-block;
-  border-bottom: 2px solid white;
-  border-top: none;
-  border-left: 2px solid white;
-  border-right: none;
-  box-sizing: border-box; 
-  background: white;
-  height: 45px;
-}
-
-/* Set a style for all buttons */
-.buttonn {
-  background-color: dodgerblue;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 1em;
-  font-weight: bold;
-  border-radius: 10px;
-  text-align: center;
-}
-.buttonn:hover {
-  opacity: 0.8;
-}
-
-button a{
-  text-decoration: none;
-  color: #fff;
-  font-size: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
