@@ -1,3 +1,4 @@
+<?php require_once("../resources/config.php"); ?>
 <div class="navbar">
     <ul>
         <div class="bar">
