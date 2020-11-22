@@ -449,6 +449,25 @@ function add_user() {
     redirect("index.php?users");
     }
 }
+function get_products_in_cat_page(){
+    $query = query(" SELECT * FROM products where product_category_id = " . escape_string($_GET['id']) . " ");
+    confirm($query);
+    while($row = fetch_array($query)){
+        $product_image = display_image($row['product_image']);
+        $product = <<<DELIMETER
+        <div class="gallery" style="margin-left: 100px;height:400px;">
+            <a target="_blank" href="item.php?id={$row['product_id']}">
+            <img src="../resources/{$product_image}" alt="Cinque Terre">
+            </a><a href="../resources/cart.php?add={$row['product_id']}">
+            <button class="button">
+                <i class="fa fa-shopping-cart" style="color:red;font-size: 20px;"></i> ADD
+            </button></a>
+            <div class="desc">{$row['product_title']}<br>{$row['product_price']}</div>
+        </div>
+DELIMETER;
+  echo $product;
+}
+}
 
                         
               
