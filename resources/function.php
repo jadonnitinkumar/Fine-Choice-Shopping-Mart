@@ -111,8 +111,8 @@ function login_user(){
     }
     
     
-    }
-    function sign_shop(){
+}
+function sign_shop(){
 
 
         if(isset($_POST['submit'])){
@@ -137,8 +137,8 @@ function login_user(){
         }
         }
         
-        }
-        function get_categories(){
+}
+function get_categories(){
 
             $query = query(" SELECT * FROM categories");
             confirm($query);
@@ -160,8 +160,8 @@ function login_user(){
             echo $categories_links;
         }
         
-        }
-        function get_categories_in_dropdown(){
+}
+function get_categories_in_dropdown(){
 
             $query = query(" SELECT * FROM categories");
             confirm($query);
@@ -179,8 +179,8 @@ function login_user(){
             echo $categories_links;
           }
           
-          }
-          function get_products_in_admin(){
+}
+function get_products_in_admin(){
             $query = query(" SELECT * FROM products");
                 confirm($query);
             
@@ -206,14 +206,14 @@ function login_user(){
             DELIMETER;
                 echo $product;
             }
-            }
-            function display_image($picture){
+}
+function display_image($picture){
 
                 global $uploads_directory;
               
                 return $uploads_directory . DS . $picture;
-              }
-              function send_message(){
+}
+function send_message(){
 
                 if(isset($_POST['submit'])){
                 
@@ -237,8 +237,8 @@ function login_user(){
                     }
                 }
                 
-                }
-                function add_product(){
+}
+function add_product(){
   
 
                     if(isset($_POST['publish'])){
@@ -260,8 +260,8 @@ function login_user(){
                        redirect("index.php?products");
                     
                     }
-                    }
-                    function show_categories_add_product_page(){
+}
+function show_categories_add_product_page(){
 
                         $query = query(" SELECT * FROM categories");
                         confirm($query);
@@ -275,6 +275,69 @@ function login_user(){
                         echo $categories_options;
                       }
                       
-                      }
-                    
+}
+function show_product_category_title($product_category_id){
+
+                        $category_query = query("SELECT * FROM categories WHERE cat_id = '{$product_category_id}'");
+                        confirm($category_query);
+                        
+                        while($category_row = fetch_array($category_query)){
+                        
+                          return $category_row['cat_title'];
+                        }
+                        
+                        
+}
+function update_product(){
+  
+
+                            if(isset($_POST['update'])){
+                               
+                               $product_title         =  escape_string($_POST['product_title']);
+                               $product_category_id   =  escape_string($_POST['product_category_id']);
+                               $product_price         =  escape_string($_POST['product_price']);
+                               $product_description   =  escape_string($_POST['product_description']);
+                               $short_description     =  escape_string($_POST['short_description']);
+                               $product_quantity      =  escape_string($_POST['product_quantity']);
+                               $product_image         =  escape_string($_FILES['file']['name']);
+                               $image_temp_location   =  escape_string($_FILES['file']['tmp_name']);
+                            
+                            
+                            
+                               if(empty($product_image)){
+                                $get_pic = query("SELECT product_image FROM products WHERE product_id =" .escape_string($_GET['id'])."");
+                                confirm($get_pic);
+                            
+                                while($pic = fetch_array($get_pic)){
+                            
+                            
+                                  $product_image = $pic['product_image'];
+                                }
+                            
+                            
+                               }
+                            
+                            
+                               move_uploaded_file($_FILES['file']['tmp_name'] , UPLOAD_DIRECTORY . DS .$_FILES['file']['name']);
+                            
+                               $query = "UPDATE products SET ";
+                               $query .= "product_title              = '{$product_title}'            ,";
+                               $query .= "product_category_id        = '{$product_category_id}'      ,";
+                               $query .= "product_description        = '{$product_description}'      ,";
+                               $query .= "short_description          = '{$short_description}'        ,";
+                               $query .= "product_price              = '{$product_price}'            ,";
+                               $query .= "product_quantity           = '{$product_quantity}'         ,";
+                               $query .= "product_image              = '{$product_image}'             ";
+                               $query .= "WHERE product_id=" . escape_string($_GET['id']);
+                            
+                               $send_update_query = query($query);
+                            
+                               confirm($send_update_query);
+                               set_message("Product has been updated");
+                               redirect("index.php?products");
+                            
+                            }
+}
+
+                        
               
