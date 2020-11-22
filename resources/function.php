@@ -112,3 +112,29 @@ function login_user(){
     
     
     }
+    function sign_shop(){
+
+
+        if(isset($_POST['submit'])){
+        $name=escape_string($_POST['usrnm']);
+        $password=escape_string($_POST['psw']);
+        $cpassword=escape_string($_POST['psw1']);
+        $email=escape_string($_POST['email']);
+        $phone=escape_string($_POST['phn']);
+        $query = query("SELECT * FROM shoptable where name = '{$name}' ");
+        confirm($query);
+        
+        if(mysqli_num_rows($query) == 1){
+        echo "Username Already Exist";
+        }
+        
+        else{
+        
+            $query = "INSERT INTO shoptable (name, email, password,phoneno) 
+                        VALUES('$name', '$email', '$password',$phone)";
+                        query($query);
+        
+        }
+        }
+        
+        }
