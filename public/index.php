@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <?php include "../resources/template/front_end/header.php"; ?>
-    <?php include "../resources/template/front_end/slider.php"; ?>
+    <?php include(TEMPLATE_FRONT . DS . "headers.php") ?>
+    <?php include(TEMPLATE_FRONT . DS . "slider.php") ?>
     <h1 id=line-1>SHOP FOR HEALTHY FOODS</h1>
     <div class="products">
         <section id="product-1">
@@ -62,12 +62,22 @@
             </div>
         </section>
     </div>
+    <h1 style="color: red; text-align: center;">PRODUCTS</h1>
+  
+<div class="asdf">
+<?php get_products(); ?>
+</div>
     <div class="healthy">
         <img class="healthy-img" src="Products_images\Blog_thumb.jpg">
         <h1>To Get Tight, Eat Right!</h1>
     </div>
 
-    <?php include "../resources/template/front_end/footer.php"; ?>
+    <!--<?php include(TEMPLATE_FRONT . DS . "categories.php") ?>-->
+
+  <?php get_categories(); ?>  
+<?php include(TEMPLATE_FRONT . DS . "footers.php") ?>
+
+<script src ="password.js"></script>
 </body>
 
 </html>
