@@ -393,5 +393,37 @@ function add_category(){
         }
         
 }
+function display_users(){
+
+    $query = "SELECT * FROM shoptable";
+    $category_query = query($query);
+    
+    
+    while($row = fetch_array($category_query)){
+    
+    $user_id = $row['shop_id'];
+    $username = $row['name'];
+    $password = $row['password'];
+    $email = $row['email'];
+    $phoneno = $row['phoneno'];
+    
+    
+    $user = <<<DELIMETER
+    
+              <tr>
+                <th>{$user_id}</th>
+                <th>{$username}</th>
+                <th>{$email}</th>
+                <th>{$phoneno}</th>
+                <td><a class="btn btn-danger" href="../../resources/template/back/delete_users.php?id={$row['shop_id']}"><span class="glyphicon glyphicon-remove"></span></a></td>
+            </tr>
+    
+    
+    DELIMETER;
+    
+    echo $user;
+    }
+}
+
                         
               
