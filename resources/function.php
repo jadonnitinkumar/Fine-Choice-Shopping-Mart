@@ -161,3 +161,23 @@ function login_user(){
         }
         
         }
+        function get_categories_in_dropdown(){
+
+            $query = query(" SELECT * FROM categories");
+            confirm($query);
+          
+          while($row = fetch_array($query)){
+          
+            $categories_links = <<<DELIMETER
+                              
+                                  <a href="bread.php?id={$row['cat_id']}">{$row['cat_title']}</a>
+                          
+                      
+          
+          
+          DELIMETER;
+            echo $categories_links;
+          }
+          
+          }
+    
