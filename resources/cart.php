@@ -129,3 +129,72 @@ DELIMETER;
 return $paypal_button;
 }
 }
+function report(){
+
+
+    if(isset($_GET['tx'])){
+    $amount = $_GET['amt'];
+    $currency = $_GET['cc'];
+    $transaction = $_GET['tx'];
+    $status = $_GET['st'];
+    $total = 0;
+    $item_quantity = 0;
+    
+    
+    
+    
+    foreach ($_SESSION as $name => $value) {
+    
+    if($value > 0){
+    
+    if(substr($name, 0, 8 ) == "product_"){
+        
+    
+    $length = strlen($name) - 8;
+    $id = substr($name, 8 , $length);
+    $date = date('d-m-y h:i:s');
+    
+    $send = query("INSERT INTO orders (order_date,order_amount,order_transaction,order_status,order_currency)
+    VALUES(CURRENT_TIMESTAMP,'{$amount}','{$transaction}','{$status}','{$currency}')");
+    $last_id = last_id();
+    confirm($send);
+    
+    
+    
+    $query = query("SELECT * FROM products WHERE product_id = " . escape_string($id) . " ");
+    confirm($query);
+    
+    while($row = fetch_array($query)){
+        $product_price = $row['product_price'];
+        $product_title = $row['product_title'];
+        $sub = $row['product_price']*$value;
+        $item_quantity +=$value;
+    
+        $insert_report = query("INSERT INTO reports (product_id,product_title,order_date,order_id,product_price,product_quantity) values('{$id}','{$product_title}',CURRENT_TIMESTAMP,'{$last_id}','{$row['product_price']}','{$value}')");
+    confirm($insert_report);
+    
+    
+    }
+    
+    $total += $sub;
+     echo $item_quantity;
+    
+    
+    }
+    }
+    }
+    session_destroy();
+    }else{
+    
+        redirect("index.php");
+    }
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    ?>
