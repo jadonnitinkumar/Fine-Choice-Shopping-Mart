@@ -424,6 +424,31 @@ function display_users(){
     echo $user;
     }
 }
+function add_user() {
+
+
+    if(isset($_POST['add_user'])) {
+    
+    
+    $username   = escape_string($_POST['username']);
+    $email      = escape_string($_POST['email']);
+    $password   = escape_string($_POST['password']);
+    $phoneno    = escape_string($_POST['phoneno']);
+    // $user_photo = escape_string($_FILES['file']['name']);
+    // $photo_temp = escape_string($_FILES['file']['tmp_name']);
+    
+    
+    // move_uploaded_file($photo_temp, UPLOAD_DIRECTORY . DS . $user_photo);
+    
+    
+    $query = query("INSERT INTO shoptable(name,email,password,phoneno) VALUES('{$username}','{$email}','{$password}','{$phoneno}')");
+    confirm($query);
+    
+    set_message("USER CREATED");
+    
+    redirect("index.php?users");
+    }
+}
 
                         
               
