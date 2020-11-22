@@ -238,5 +238,28 @@ function login_user(){
                 }
                 
                 }
-            
+                function add_product(){
+  
+
+                    if(isset($_POST['publish'])){
+                       
+                       $product_title         =  escape_string($_POST['product_title']);
+                       $product_category_id   =  escape_string($_POST['product_category_id']);
+                       $product_price         =  escape_string($_POST['product_price']);
+                       $product_description   =  escape_string($_POST['product_description']);
+                       $product_quantity      =  escape_string($_POST['product_quantity']);
+                       $product_image         =  escape_string($_FILES['file']['name']);
+                       $short_description   =  escape_string($_POST['short_description']);
+                       move_uploaded_file($_FILES['file']['tmp_name'] , UPLOAD_DIRECTORY . DS .$_FILES['file']['name']);
+                    
+                       $query = query("INSERT INTO products(product_title,product_category_id,product_price,product_description,product_quantity,product_image,short_description) 
+                        VALUES('{$product_title}','{$product_category_id}','{$product_price}','{$product_description}','{$product_quantity}','{$product_image}','{$short_description}')");
+                       $last_id = last_id();
+                       confirm($query);
+                       set_message("New product with id {$last_id} just added");
+                       redirect("index.php?products");
+                    
+                    }
+                    }
+                
               
