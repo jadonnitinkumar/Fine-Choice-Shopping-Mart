@@ -207,4 +207,11 @@ function login_user(){
                 echo $product;
             }
             }
-            
+            function display_image($picture){
+
+                global $uploads_directory;
+              
+                return $uploads_directory . DS . $picture;
+              }
+
+              
