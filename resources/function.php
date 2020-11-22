@@ -138,3 +138,26 @@ function login_user(){
         }
         
         }
+        function get_categories(){
+
+            $query = query(" SELECT * FROM categories");
+            confirm($query);
+        
+        while($row = fetch_array($query)){
+        
+          $product_image = display_image($row['cat_img']);
+        
+            $categories_links = <<<DELIMETER
+            <div class="gallery1" style="height: auto;margin-left: 100px;">
+                <a href="bread.php?id={$row['cat_id']}">
+                    <img class="img-circle" src="../resources/{$product_image}" alt="Cinque Terre" style="width: 200px;">
+                </a>
+                <div class="desc1">{$row['cat_title']}</div>
+            </div>
+        
+        
+        DELIMETER;
+            echo $categories_links;
+        }
+        
+        }
