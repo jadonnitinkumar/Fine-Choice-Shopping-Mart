@@ -91,3 +91,24 @@ DELIMETER;
 }
 
 }
+function login_user(){
+
+    if(isset($_POST['submit'])){
+    $name=escape_string($_POST['usrnm']);
+    $password=escape_string($_POST['psw']);
+    $email=escape_string($_POST['email']);
+    $query = query("SELECT * FROM users where username = '{$name}' and password = '{$password}' and email = '{$email}'");
+    confirm($query);
+    if(mysqli_num_rows($query) == 0){
+    redirect("icon.php");
+    }
+    else
+    {
+      $_SESSION['name'] = $usrnm;
+        redirect("index.php");
+    }
+    
+    }
+    
+    
+    }
