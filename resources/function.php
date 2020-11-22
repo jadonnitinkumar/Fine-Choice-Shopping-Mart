@@ -338,6 +338,41 @@ function update_product(){
                             
                             }
 }
+function show_categories_in_admin(){
+
+    $query = "SELECT * FROM categories";
+    $category_query = query($query);
+    
+    
+    while($row = fetch_array($category_query)){
+    
+    $cat_id = $row['cat_id'];
+    $cat_title = $row['cat_title'];
+    
+    
+    $category = <<<DELIMETER
+    
+              <tr>
+                <th>{$cat_id}</th>
+                <th>{$cat_title}</th>
+                <td><a class="btn btn-danger" href="../../resources/template/back/delete_category.php?id={$row['cat_id']}"><span class="glyphicon glyphicon-remove"></span></a></td>
+            </tr>
+    
+    
+    DELIMETER;
+    
+    echo $category;
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    }
 
                         
               
