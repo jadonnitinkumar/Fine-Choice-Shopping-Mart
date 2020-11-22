@@ -261,5 +261,20 @@ function login_user(){
                     
                     }
                     }
-                
+                    function show_categories_add_product_page(){
+
+                        $query = query(" SELECT * FROM categories");
+                        confirm($query);
+                      
+                      while($row = fetch_array($query)){
+                      
+                        $categories_options = <<<DELIMETER
+                          <option value="{$row['cat_id']}">{$row['cat_title']}</option>
+                                 
+                      DELIMETER;
+                        echo $categories_options;
+                      }
+                      
+                      }
+                    
               
