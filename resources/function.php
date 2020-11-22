@@ -468,6 +468,24 @@ DELIMETER;
   echo $product;
 }
 }
+function display_orders(){
+    $query = query("SELECT * FROM orders");
+    confirm($query);
+    while($row = fetch_array($query)){
+    $orders = <<<DELIMETER
+              <tr>
+               <th>{$row['order_id']}</th>
+               <th>{$row['order_amount']}</th>
+               <th>{$row['order_transaction']}</th>
+               <th>{$row['order_currency']}</th>
+               <th>{$row['order_status']}</th>
+               <th>{$row['order_date']}</th>
+               <td><a class="btn btn-danger" href="../../resources/template/back/delete_order.php?id={$row['order_id']}"><span class="glyphicon glyphicon-remove"></span></a></td>
+              </tr>
+    DELIMETER;
+    echo $orders;
+    }
+}
 
                         
               
