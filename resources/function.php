@@ -369,10 +369,29 @@ function show_categories_in_admin(){
     
     
     }
-    
-    
-    
-    }
+}
+function add_category(){
 
+        if(isset($_POST['add_category'])){
+        
+        $cat_title         =  escape_string($_POST['cat_title']);
+        $cat_image         =  escape_string($_FILES['file']['name']);
+        move_uploaded_file($_FILES['file']['tmp_name'] , UPLOAD_DIRECTORY . DS .$_FILES['file']['name']);
+        
+        if(empty($cat_title) || $cat_title == " "){
+        
+          echo "<p class='bg-danger'>This cannot be empty";
+        }else{
+        
+        $insert_cat = query("INSERT INTO categories(cat_title,cat_img) VALUES('{$cat_title}','{$cat_image}')");
+        
+        confirm($insert_cat);
+        
+        set_message("Category created");
+        }
+        
+        }
+        
+}
                         
               
